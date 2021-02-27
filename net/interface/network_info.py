@@ -8,5 +8,6 @@ class NetworkInfo:
 
     def get_mac_addr(self):
         return self.mac
+
     def to_string(self):
-        return self.ip + " " + self.mac
+        return '{}{}{}'.format(self.ip, '\t', self.mac)
